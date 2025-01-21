@@ -5,7 +5,7 @@ Accessing files and folders with spaces in their names can be cumbersome, especi
 The File Renamer Tool solves this problem by replacing spaces in file and folder names with underscores, ensuring names are clean, consistent, and easy to access. It simplifies command-line interactions, enhances automation workflows, and improves overall file organization.
 
 
-# Target Audience
+### Target Audience
 
 This tool is ideal for:
 
@@ -18,7 +18,7 @@ Professionals and Creators: Those managing large collections of files who need t
 Casual Users: Anyone wanting to make their file system more navigable and organized.
 
 
-# What the Program Does
+## What the Program Does
 The program:
 
 1. Scans a specified directory for files and subdirectories.
@@ -34,7 +34,7 @@ The program:
     * Both files and directories.
 
 
-# Features
+## Features
 - **Main Functionality:** Replaces spaces in names with underscores to improve accessibility and compatibility.
 - **Dry Run Mode:** Simulates renaming to preview changes without committing them.
 - **Backup and Undo:** Allows restoration of original names using a backup file.
@@ -43,7 +43,7 @@ The program:
 - **Color-Coded Output:** Makes it easy to track changes during execution with clear visual feedback.
 
 
-# Command Line Interface
+## Command Line Interface
 
 The program provides an easy-to-use command-line interface with the following options:
 
@@ -77,7 +77,7 @@ python rename_files.py -undo
 python rename_files.py -h
  ```
 
-# How It Works
+## How It Works
 
 1. *User Input:* Specify the directory to process and select the desired mode (files, directories, or both).
 2. *Directory Scanning:* The program iterates through all files and subdirectories.
@@ -86,9 +86,9 @@ python rename_files.py -h
 5. *Undo Support:* Allows restoration of names using the backup file.
 
 
-# Example
+## Example
 
-## Before Running
+#### Before Running
 
  ``` example_dir/
 ├── file with spaces.txt
@@ -97,13 +97,13 @@ python rename_files.py -h
 │   ├── messy   name.jpg
  ```
 
-## Command
+#### Command
 
  ``` pythone
 python rename_files.py example_dir -a
  ```
 
-## After Renaming
+#### After Renaming
 
  ```
 example_dir/
@@ -114,7 +114,7 @@ example_dir/
  ```
 
 
-# Potential Use Cases
+## Potential Use Cases
 
 - **Command-Line Navigation:** Simplifies access to files and directories without needing escape sequences or quotes.
 - **Automation Scripts:** Ensures compatibility with workflows that require clean and predictable file names.
