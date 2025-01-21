@@ -24,14 +24,14 @@ The program:
 1. Scans a specified directory for files and subdirectories.
 2. Identifies names with spaces and replaces them with underscores for uniformity.
 3. Handles additional inconsistencies by:
-* Removing trailing spaces before file extensions.
-* Consolidating multiple spaces into single underscores.
-* Supports optional "dry run" mode for previewing changes without making modifications.
+    * Removing trailing spaces before file extensions.
+    * Consolidating multiple spaces into single underscores.
+    * Supports optional "dry run" mode for previewing changes without making modifications.
 4. Saves a backup of the original names, allowing users to undo changes if needed.
 5. Offers flexibility to target:
-* Files only.
-* Directories only.
-* Both files and directories.
+    * Files only.
+    * Directories only.
+    * Both files and directories.
 
 
 # Features
@@ -48,22 +48,34 @@ The program:
 The program provides an easy-to-use command-line interface with the following options:
 
 * Rename files and directories (default):
-
+'''python
+python rename_files.py <directory> -a
+'''
 
 * Rename files only:
-
+'''python
+python rename_files.py <directory> -f
+'''
 
 * Rename directories only:
-
+'''python
+python rename_files.py <directory> -d
+'''
 
 * Dry run (simulate changes):
-
+'''python
+python rename_files.py <directory> -drymod
+'''
 
 * Undo changes:
-
+'''python
+python rename_files.py -undo
+'''
 
 * View help message:
-
+'''python
+python rename_files.py -h
+'''
 
 # How It Works
 
