@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Rename Tool | Turning tangled names into seamless paths!</title>
+<meta name="generator" content="Jekyll v4.3.4" />
+<meta property="og:title" content="Rename Tool" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Turning tangled names into seamless paths!" />
+<meta property="og:description" content="Turning tangled names into seamless paths!" />
+<link rel="canonical" href="http://localhost:4000/" />
+<meta property="og:url" content="http://localhost:4000/" />
+<meta property="og:site_name" content="Rename Tool" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Rename Tool" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","description":"Turning tangled names into seamless paths!","headline":"Rename Tool","name":"Rename Tool","url":"http://localhost:4000/"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" type="text/css" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="/assets/css/style.css?v=">
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  </head>
+  <body>
+    <!-- <a id="skip-to-content" href="#content">Skip to the content.</a> -->
+
+    <header class="page-header" role="banner">
+      <h1 class="project-name">Rename Tool</h1>
+      <h2 class="project-tagline">Turning tangled names into seamless paths!</h2>
+
+
+      <a target="_blank" href="https://github.com/Bashlenix/file-organizer/tree/master/code" class="btn">Download</a>
+
+    </header>
+
+    <main id="content" class="main-content" role="main">
+      <h1 id="problem-the-program-solves">Problem the Program Solves</h1>
+
+<p>Accessing files and folders with spaces in their names can be cumbersome, especially in command-line environments where spaces require escaping or quoting. This often leads to inefficiencies, errors, and frustration. Additionally, inconsistent naming with trailing spaces or multiple spaces can make directories appear untidy and hard to manage.</p>
+
+<p>The File Renamer Tool solves this problem by replacing spaces in file and folder names with underscores, ensuring names are clean, consistent, and easy to access. It simplifies command-line interactions, enhances automation workflows, and improves overall file organization.</p>
+
+<h2 id="target-audience">Target Audience</h2>
+
+<p>This tool is ideal for:</p>
+
+<p><strong>Command-Line Users:</strong> Developers, system administrators, and anyone who frequently interacts with files and directories through the command-line.</p>
+
+<h2 id="what-the-program-does">What the Program Does</h2>
+<p>The program:</p>
+
+<ol>
+  <li>Scans a specified directory for files and subdirectories.</li>
+  <li>Identifies names with spaces and replaces them with underscores for uniformity.</li>
+  <li>Handles additional inconsistencies by:
+    <ul>
+      <li>Removing trailing spaces before file extensions.</li>
+      <li>Consolidating multiple spaces into single underscores.</li>
+      <li>Supports optional “dry run” mode for previewing changes without making modifications.</li>
+    </ul>
+  </li>
+  <li>Saves a backup of the original names, allowing users to undo changes if needed.</li>
+  <li>Offers flexibility to target:
+    <ul>
+      <li>Files only.</li>
+      <li>Directories only.</li>
+      <li>Both files and directories (-a or default mode if no option is specified).</li>
+    </ul>
+  </li>
+</ol>
+
+<h2 id="features">Features</h2>
+<ul>
+  <li><strong>Main Functionality:</strong> Replaces spaces in names with underscores to improve accessibility and compatibility.</li>
+  <li><strong>Dry Run Mode:</strong> Simulates renaming to preview changes without committing them.</li>
+  <li><strong>Backup and Undo:</strong> Allows restoration of original names using a backup file.</li>
+  <li><strong>Custom Modes:</strong>  Processes files <span style="color:red"> (-f) </span>, directories <span style="color:red"> (-d) </span>, or both <span style="color:red"> (-a or default mode) </span>.</li>
+  <li><strong>Cross-Platform Compatibility:</strong> Works seamlessly on macOS, Linux, and Windows systems.</li>
+  <li><strong>Color-Coded Output <u>(Dry Mode Only)</u>:</strong> Provides clear visual feedback during dry runs to easily track potential changes without making permanent modifications.</li>
+</ul>
+
+<h2 id="command-line-interface">Command Line Interface</h2>
+
+<p>The program provides an easy-to-use command-line interface with the following options:</p>
+
+<ul>
+  <li>Rename files and directories (default):
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">python</span> <span class="n">rename_files</span><span class="p">.</span><span class="n">py</span> <span class="o">&lt;</span><span class="n">directory</span><span class="o">&gt;</span> <span class="o">-</span><span class="n">a</span>
+</code></pre></div>    </div>
+  </li>
+  <li>Rename files only:
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">python</span> <span class="n">rename_files</span><span class="p">.</span><span class="n">py</span> <span class="o">&lt;</span><span class="n">directory</span><span class="o">&gt;</span> <span class="o">-</span><span class="n">f</span>
+</code></pre></div>    </div>
+  </li>
+  <li>Rename directories only:
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">python</span> <span class="n">rename_files</span><span class="p">.</span><span class="n">py</span> <span class="o">&lt;</span><span class="n">directory</span><span class="o">&gt;</span> <span class="o">-</span><span class="n">d</span>
+</code></pre></div>    </div>
+  </li>
+  <li>Dry run (simulate changes):
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">python</span> <span class="n">rename_files</span><span class="p">.</span><span class="n">py</span> <span class="o">&lt;</span><span class="n">directory</span><span class="o">&gt;</span> <span class="o">-</span><span class="n">drymod</span>
+</code></pre></div>    </div>
+  </li>
+  <li>Undo changes:
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">python</span> <span class="n">rename_files</span><span class="p">.</span><span class="n">py</span> <span class="o">-</span><span class="n">undo</span>
+</code></pre></div>    </div>
+  </li>
+  <li>View help message:
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">python</span> <span class="n">rename_files</span><span class="p">.</span><span class="n">py</span> <span class="o">-</span><span class="n">h</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h2 id="how-it-works">How It Works</h2>
+
+<ol>
+  <li><strong>User Input:</strong> Specify the directory to process and select the desired mode (files, directories, or both).</li>
+  <li><strong>Directory Scanning:</strong> The program iterates through all files and subdirectories.</li>
+  <li><strong>Space Replacement:</strong> Replaces all spaces in names with underscores and removes unnecessary spaces.</li>
+  <li><strong>Backup Creation:</strong> Saves a backup of the original names to a <span style="color:red"> backup.json</span> file.</li>
+  <li><strong>Undo Support:</strong> Allows restoration of names using the backup file.</li>
+</ol>
+
+<h2 id="example">Example</h2>
+
+<h4 id="before-running">Before Running</h4>
+
+<pre><code class="language-example_dir/">├── file with spaces.txt
+├── another  file   .docx
+├── sub folder/
+│   ├── messy   name.jpg
+</code></pre>
+
+<h4 id="command">Command</h4>
+
+<pre><code class="language-pythone">python rename_files.py example_dir -a
+</code></pre>
+
+<h4 id="after-renaming">After Renaming</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>example_dir/
+├── file_with_spaces.txt
+├── another_file.docx
+├── sub_folder/
+│   ├── messy_name.jpg
+</code></pre></div></div>
+
+<h2 id="potential-use-cases">Potential Use Cases</h2>
+
+<ul>
+  <li><strong>Command-Line Navigation:</strong> Simplifies access to files and directories without needing escape sequences or quotes.</li>
+  <li><strong>Automation Scripts:</strong> Ensures compatibility with workflows that require clean and predictable file names.</li>
+  <li><strong>File Management:</strong> Organizes files and folders by replacing spaces with underscores for better readability and usability.</li>
+  <li><strong>Cross-Platform Access:</strong> Improves file handling across different systems, including those with strict naming rules.</li>
+</ul>
+
+
+
+      <footer class="site-footer">
+        <span class="site-footer-credits">Made by Muhammad Otah Bashi</span>
+      </footer>
+    </main>
+  </body>
+</html>

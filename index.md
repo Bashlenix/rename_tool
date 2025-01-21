@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Problem the Program Solves
 
 Accessing files and folders with spaces in their names can be cumbersome, especially in command-line environments where spaces require escaping or quoting. This often leads to inefficiencies, errors, and frustration. Additionally, inconsistent naming with trailing spaces or multiple spaces can make directories appear untidy and hard to manage.
@@ -9,13 +13,8 @@ The File Renamer Tool solves this problem by replacing spaces in file and folder
 
 This tool is ideal for:
 
-Command-Line Users: Developers, system administrators, and anyone who frequently interacts with files and directories through the command-line.
+**Command-Line Users:** Developers, system administrators, and anyone who frequently interacts with files and directories through the command-line.
 
-Automation Enthusiasts: Individuals setting up scripts or workflows that require predictable and consistent file names.
-
-Professionals and Creators: Those managing large collections of files who need to ensure accessibility and readability of names.
-
-Casual Users: Anyone wanting to make their file system more navigable and organized.
 
 
 ## What the Program Does
@@ -38,9 +37,9 @@ The program:
 - **Main Functionality:** Replaces spaces in names with underscores to improve accessibility and compatibility.
 - **Dry Run Mode:** Simulates renaming to preview changes without committing them.
 - **Backup and Undo:** Allows restoration of original names using a backup file.
-- **Custom Modes:**  Processes files <span style= color: "red"> (-f) </span>, directories <span style= color: "red"> (-d) </span>, or both <span style= color: "red"> (-a or default mode) </span>.
+- **Custom Modes:**  Processes files <span style="color:red"> (-f) </span>, directories <span style="color:red"> (-d) </span>, or both <span style="color:red"> (-a or default mode) </span>.
 - **Cross-Platform Compatibility:** Works seamlessly on macOS, Linux, and Windows systems.
-- **Color-Coded Output:** Makes it easy to track changes during execution with clear visual feedback.
+- **Color-Coded Output <u>(Dry Mode Only)</u>:** Provides clear visual feedback during dry runs to easily track potential changes without making permanent modifications.
 
 
 ## Command Line Interface
@@ -82,7 +81,7 @@ python rename_files.py -h
 1. **User Input:** Specify the directory to process and select the desired mode (files, directories, or both).
 2. **Directory Scanning:** The program iterates through all files and subdirectories.
 3. **Space Replacement:** Replaces all spaces in names with underscores and removes unnecessary spaces.
-4. **Backup Creation:** Saves a backup of the original names to a <span style= color: "red">backup.json</span> file.
+4. **Backup Creation:** Saves a backup of the original names to a <span style="color:red"> backup.json</span> file.
 5. **Undo Support:** Allows restoration of names using the backup file.
 
 
@@ -120,3 +119,4 @@ example_dir/
 - **Automation Scripts:** Ensures compatibility with workflows that require clean and predictable file names.
 - **File Management:** Organizes files and folders by replacing spaces with underscores for better readability and usability.
 - **Cross-Platform Access:** Improves file handling across different systems, including those with strict naming rules.
+
