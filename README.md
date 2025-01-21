@@ -48,34 +48,34 @@ The program:
 The program provides an easy-to-use command-line interface with the following options:
 
 * Rename files and directories (default):
-'''python
+ ```python
 python rename_files.py <directory> -a
-'''
+ ```
 
 * Rename files only:
-'''python
+ ```python
 python rename_files.py <directory> -f
-'''
+ ```
 
 * Rename directories only:
-'''python
+ ```python
 python rename_files.py <directory> -d
-'''
+ ```
 
 * Dry run (simulate changes):
-'''python
+ ```python
 python rename_files.py <directory> -drymod
-'''
+ ```
 
 * Undo changes:
-'''python
+ ```python
 python rename_files.py -undo
-'''
+ ```
 
 * View help message:
-'''python
+ ```python
 python rename_files.py -h
-'''
+ ```
 
 # How It Works
 
@@ -90,28 +90,28 @@ python rename_files.py -h
 
 ## Before Running
 
-''' example_dir/
+ ``` example_dir/
 ├── file with spaces.txt
 ├── another  file   .docx
 ├── sub folder/
 │   ├── messy   name.jpg
-'''
+ ```
 
 ## Command
 
-''' pythone
+ ``` pythone
 python rename_files.py example_dir -a
-'''
+ ```
 
 ## After Renaming
 
-'''
+ ```
 example_dir/
 ├── file_with_spaces.txt
 ├── another_file.docx
 ├── sub_folder/
 │   ├── messy_name.jpg
-'''
+ ```
 
 
 # Potential Use Cases
